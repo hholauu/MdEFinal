@@ -1,0 +1,68 @@
+
+
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title style="font-weight: bold;">MdE - Mesas de Examen</ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/avisos">
+        <ion-icon name="notifications-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" color="light">
+  
+  <!-- Tarjeta de bienvenida / Resumen -->
+  <ion-card style="background: linear-gradient(135deg, var(--ion-color-primary), #008f65); color: white; border-radius: 16px; padding: 15px; margin-bottom: 20px;">
+    <div style="display: flex; align-items: center; justify-content: space-between;">
+      <div>
+        <h2 style="margin: 0; font-weight: bold; font-size: 20px;">¡Hola, Estudiante!</h2>
+        <p style="margin: 5px 0 0 0; font-size: 14px; opacity: 0.9;">Cronograma oficial de mesas disponibles</p>
+      </div>
+      <ion-icon name="calendar-outline" style="font-size: 40px; opacity: 0.8;"></ion-icon>
+    </div>
+  </ion-card>
+
+  <h3 style="font-size: 16px; font-weight: bold; color: #333; margin-bottom: 15px;">Próximas Mesas de Examen</h3>
+
+  <!-- Elemento de examen 1 -->
+  <ion-card style="border-radius: 12px; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+    <ion-card-content>
+      <p style="font-size: 12px; color: var(--ion-color-primary); font-weight: bold; margin-bottom: 5px;">MARTES 20 DE MAYO</p>
+      <h2 style="font-size: 16px; font-weight: bold; color: #222; margin-bottom: 10px;">Análisis Matemático I</h2>
+      
+      <div style="display: flex; gap: 15px; color: #666; font-size: 13px;">
+        <span style="display: flex; align-items: center; gap: 5px;">
+          <ion-icon name="time-outline"></ion-icon> 08:30 hs
+        </span>
+        <span style="display: flex; align-items: center; gap: 5px;">
+          <ion-icon name="location-outline"></ion-icon> Aula 05
+        </span>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Elemento de examen 2 -->
+  <ion-card style="border-radius: 12px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+    <ion-card-content>
+      <p style="font-size: 12px; color: var(--ion-color-primary); font-weight: bold; margin-bottom: 5px;">MARTES 27 DE MAYO</p>
+      <h2 style="font-size: 16px; font-weight: bold; color: #222; margin-bottom: 10px;">Matemática Discreta</h2>
+      
+      <div style="display: flex; gap: 15px; color: #666; font-size: 13px;">
+        <span style="display: flex; align-items: center; gap: 5px;">
+          <ion-icon name="time-outline"></ion-icon> 09:30 hs
+        </span>
+        <span style="display: flex; align-items: center; gap: 5px;">
+          <ion-icon name="location-outline"></ion-icon> Aula 03
+        </span>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Botón para ir a Inscripción -->
+  <ion-button expand="block" routerLink="/inscripcion" color="primary" style="height: 48px; font-weight: bold; border-radius: 8px;">
+    Ir a Inscripciones
+  </ion-button>
+
+</ion-content>

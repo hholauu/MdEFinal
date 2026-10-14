@@ -1,0 +1,57 @@
+
+
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button routerLink="/inicio">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title style="font-weight: bold;">Inscripción</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" color="light">
+  
+  <p style="font-size: 14px; color: #666; margin-bottom: 20px;">
+    Inscribite a las mesas de examen disponibles.
+  </p>
+
+  <!-- Tarjeta de Nueva Inscripción -->
+  <ion-card style="border-radius: 12px; margin-bottom: 25px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); padding: 15px;">
+    <h3 style="font-size: 16px; font-weight: bold; color: #333; margin-bottom: 15px;">Nueva Inscripción</h3>
+    
+    <div style="margin-bottom: 15px;">
+      <label style="display: block; font-size: 12px; color: #666; margin-bottom: 5px;">Selecciona una materia:</label>
+      <select [(ngModel)]="materiaSeleccionada" style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #ccc; background: white; font-size: 14px;">
+        <option value="" disabled selected>Elige una materia...</option>
+        <option value="Análisis Matemático I">Análisis Matemático I</option>
+        <option value="Matemática Discreta">Matemática Discreta</option>
+        <option value="Algoritmos y Estructuras de Datos">Algoritmos y Estructuras de Datos</option>
+      </select>
+    </div>
+
+    <ion-button expand="block" color="primary" (click)="confirmarInscripcion()" style="height: 45px; font-weight: bold; border-radius: 8px;">
+      Confirmar Inscripción
+    </ion-button>
+  </ion-card>
+
+  <!-- Sección de Mis Inscripciones Vigentes -->
+  <h3 style="font-size: 16px; font-weight: bold; color: #333; margin-bottom: 15px;">Mis Inscripciones</h3>
+
+  <ion-card style="border-radius: 12px; border-left: 5px solid var(--ion-color-primary); box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin-bottom: 15px;">
+    <ion-card-content style="padding: 15px;">
+      <div style="display: flex; align-items: center; justify-content: space-between;">
+        <div>
+          <h2 style="font-size: 16px; font-weight: bold; color: #222; margin: 0 0 5px 0;">Análisis Matemático I</h2>
+          <p style="font-size: 12px; color: #666; margin: 0;">Martes 20 de Mayo • 08:30 hs</p>
+        </div>
+        <ion-icon name="checkmark-circle-outline" style="font-size: 28px; color: var(--ion-color-primary);"></ion-icon>
+      </div>
+      <div style="margin-top: 10px; background: #e6f4ea; color: #137333; padding: 5px 10px; border-radius: 6px; font-size: 12px; display: inline-block; font-weight: bold;">
+        Inscripto Correctamente
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

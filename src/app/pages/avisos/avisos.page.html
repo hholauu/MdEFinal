@@ -1,0 +1,79 @@
+
+
+
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button routerLink="/inicio">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title style="font-weight: bold;">Avisos y Novedades</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" color="light">
+
+  <!-- Resumen superior estilo Figma -->
+  <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+    <div style="flex: 1; background: white; padding: 12px; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.04); text-align: center;">
+      <span style="font-size: 20px; font-weight: bold; color: var(--ion-color-primary);">2</span>
+      <p style="font-size: 12px; color: #666; margin: 2px 0 0 0;">Oportunidades</p>
+    </div>
+    <div style="flex: 1; background: white; padding: 12px; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.04); text-align: center;">
+      <span style="font-size: 20px; font-weight: bold; color: #f9ab00;">1</span>
+      <p style="font-size: 12px; color: #666; margin: 2px 0 0 0;">Recomendaciones</p>
+    </div>
+  </div>
+
+  <h3 style="font-size: 16px; font-weight: bold; color: #333; margin-bottom: 15px;">Avisos Recientes</h3>
+
+  <!-- Aviso 1 -->
+  <ion-card style="border-radius: 12px; border-left: 5px solid var(--ion-color-primary); box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin-bottom: 15px;">
+    <ion-card-content style="padding: 15px;">
+      <div style="display: flex; gap: 12px; align-items: flex-start;">
+        <ion-icon name="information-circle-outline" style="font-size: 24px; color: var(--ion-color-primary); margin-top: 2px;"></ion-icon>
+        <div>
+          <h2 style="font-size: 15px; font-weight: bold; color: #222; margin: 0 0 5px 0;">Recordatorio de Examen</h2>
+          <p style="font-size: 13px; color: #555; margin: 0 0 8px 0; line-height: 1.4;">
+            Llegar 15 minutos antes del horario de la mesa de examen con DNI y libreta universitaria.
+          </p>
+          <span style="font-size: 11px; color: #888;">Hoy • 08:30 hs</span>
+        </div>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Aviso 2 -->
+  <ion-card style="border-radius: 12px; border-left: 5px solid #f9ab00; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin-bottom: 15px;">
+    <ion-card-content style="padding: 15px;">
+      <div style="display: flex; gap: 12px; align-items: flex-start;">
+        <ion-icon name="alert-circle-outline" style="font-size: 24px; color: #f9ab00; margin-top: 2px;"></ion-icon>
+        <div>
+          <h2 style="font-size: 15px; font-weight: bold; color: #222; margin: 0 0 5px 0;">Materiales necesarios</h2>
+          <p style="font-size: 13px; color: #555; margin: 0 0 8px 0; line-height: 1.4;">
+            Recordá que está permitido el uso de calculadora científica no programable para Análisis Matemático.
+          </p>
+          <span style="font-size: 11px; color: #888;">Ayer • 18:00 hs</span>
+        </div>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Aviso 3 -->
+  <ion-card style="border-radius: 12px; border-left: 5px solid #137333; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin-bottom: 15px;">
+    <ion-card-content style="padding: 15px;">
+      <div style="display: flex; gap: 12px; align-items: flex-start;">
+        <ion-icon name="checkmark-circle-outline" style="font-size: 24px; color: #137333; margin-top: 2px;"></ion-icon>
+        <div>
+          <h2 style="font-size: 15px; font-weight: bold; color: #222; margin: 0 0 5px 0;">Inscripción Confirmada</h2>
+          <p style="font-size: 13px; color: #555; margin: 0 0 8px 0; line-height: 1.4;">
+            Tu inscripción para la mesa de Matemática Discreta fue procesada exitosamente.
+          </p>
+          <span style="font-size: 11px; color: #888;">Hace 2 días • 14:20 hs</span>
+        </div>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

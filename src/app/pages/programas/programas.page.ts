@@ -1,0 +1,29 @@
+import { Component, OnInit, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { RouterLink } from '@angular/router';
+import { addIcons } from 'ionicons';
+import { arrowBackOutline, searchOutline, documentTextOutline, downloadOutline } from 'ionicons/icons';
+import { NavbarComponent } from '../../components/navbar/navbar.component';
+
+@Component({
+  selector: 'app-programas',
+  templateUrl: './programas.page.html',
+  styleUrls: ['./programas.page.scss'],
+  standalone: true,
+  imports: [CommonModule, FormsModule, RouterLink, NavbarComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+})
+export class ProgramasPage implements OnInit {
+  textoBusqueda: string = '';
+
+  constructor() {
+    addIcons({ arrowBackOutline, searchOutline, documentTextOutline, downloadOutline });
+  }
+
+  ngOnInit() {}
+
+  descargarPrograma(materia: string) {
+    alert(`Descargando el programa de ${materia} (PDF)...`);
+  }
+}

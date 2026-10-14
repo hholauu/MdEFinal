@@ -1,0 +1,7 @@
+{
+  "name": "Mde",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

@@ -1,0 +1,67 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button routerLink="/inicio">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title style="font-weight: bold;">Programas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" color="light">
+  
+  <p style="font-size: 14px; color: #666; margin-bottom: 15px;">
+    Buscá y descargá los programas de estudio de todas las materias.
+  </p>
+
+  <!-- Buscador -->
+  <div style="position: relative; margin-bottom: 20px;">
+    <span style="position: absolute; left: 12px; top: 13px; color: #888;">
+      <ion-icon name="search-outline" style="font-size: 18px;"></ion-icon>
+    </span>
+    <input 
+      type="text" 
+      [(ngModel)]="textoBusqueda" 
+      placeholder="Buscar programa..." 
+      style="width: 100%; padding: 12px 12px 12px 40px; border-radius: 8px; border: 1px solid #ccc; background: white; font-size: 14px; outline: none;"
+    />
+  </div>
+
+  <!-- Elemento de Programa 1 -->
+  <ion-card style="border-radius: 12px; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+    <ion-card-content style="padding: 15px; display: flex; align-items: center; justify-content: space-between;">
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <div style="background: #e6f4ea; color: #137333; padding: 10px; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+          <ion-icon name="document-text-outline" style="font-size: 24px;"></ion-icon>
+        </div>
+        <div>
+          <h2 style="font-size: 15px; font-weight: bold; color: #222; margin: 0 0 3px 0;">Programa de Análisis Matemático I</h2>
+          <p style="font-size: 12px; color: #666; margin: 0;">PDF • Actualizado 2026</p>
+        </div>
+      </div>
+      <ion-button fill="clear" color="primary" (click)="descargarPrograma('Análisis Matemático I')">
+        <ion-icon name="download-outline" slot="icon-only" style="font-size: 22px;"></ion-icon>
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Elemento de Programa 2 -->
+  <ion-card style="border-radius: 12px; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+    <ion-card-content style="padding: 15px; display: flex; align-items: center; justify-content: space-between;">
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <div style="background: #e6f4ea; color: #137333; padding: 10px; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+          <ion-icon name="document-text-outline" style="font-size: 24px;"></ion-icon>
+        </div>
+        <div>
+          <h2 style="font-size: 15px; font-weight: bold; color: #222; margin: 0 0 3px 0;">Programa de Matemática Discreta</h2>
+          <p style="font-size: 12px; color: #666; margin: 0;">PDF • Actualizado 2026</p>
+        </div>
+      </div>
+      <ion-button fill="clear" color="primary" (click)="descargarPrograma('Matemática Discreta')">
+        <ion-icon name="download-outline" slot="icon-only" style="font-size: 22px;"></ion-icon>
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

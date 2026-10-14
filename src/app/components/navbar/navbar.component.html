@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title style="font-weight: bold; font-size: 22px;">MdE</ion-title>
+    
+    <!-- Botón de configuración -->
+    <ion-buttons slot="end">
+      <ion-button routerLink="/configuracion">
+        <ion-icon name="settings-outline" style="font-size: 22px; color: white;"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+  <!-- Pestañas de navegación superior (Tabs) -->
+  <div class="nav-tabs-container">
+    <a routerLink="/inicio" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="tab-item">
+      Inicio
+    </a>
+    <a routerLink="/inscripcion" routerLinkActive="active" class="tab-item">
+      Inscripción
+    </a>
+    <a routerLink="/programas" routerLinkActive="active" class="tab-item">
+      Programas
+    </a>
+    <a routerLink="/avisos" routerLinkActive="active" class="tab-item">
+      Avisos
+    </a>
+  </div>
+</ion-header>
